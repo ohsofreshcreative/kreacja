@@ -16,7 +16,7 @@
 
 	<style>
 		:root {
-			--site-url: '{{ site(' url') }}';
+			--site-url: '{{ get_site_url() }}';
 		}
 	</style>
 
