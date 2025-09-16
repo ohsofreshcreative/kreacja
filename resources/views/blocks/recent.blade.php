@@ -1,19 +1,21 @@
 {{-- Zmienne $id, $class, $title, $subtitle, $products są przekazywane z Recent.php --}}
 
+<!--- recent --->
+
 <section
 	@if(!empty($id)) id="{{ $id }}" @endif
 	class="recent -smt {{ $block->classes }} {{ $class ?? '' }} @if($lightbg) -light-bg @endif @if($nomt) -no-mt @endif"
 	data-gsap-anim="section">
-	<div class="c-main @if(!empty($title)) flex flex-col md:flex-row md:gap-8 items-center @endif">
+	<div class="c-main @if(!empty($title)) @endif">
 		
 		@if(!empty($title))
-		<div class="__wrapper block w-full md:w-1/3 mb-8 md:mb-0 flex-shrink-0">
+		<div class="__wrapper block flex-shrink-0">
 			<p class="text-xl text-gray">{{ $subtitle }}</p>
 			<h1 class="big">{{ $title }}</h1>
 		</div>
 		@endif
 
-		<div class="slider-clipper w-full @if(!empty($title)) md:w-[60vw] @endif overflow-hidden">
+		<div class="slider-clipper w-full mt-8 @if(!empty($title)) @endif">
 			@if(!empty($products))
 			<div class="swiper recents-swiper !overflow-visible">
 				<div class="swiper-wrapper">

@@ -9,7 +9,7 @@ $sectionClass .= $flip ? ' order-flip' : '';
 
 	<div class="__wrapper c-main z-1">
 
-		<div class="w-1/3">
+		<div class="w-full md:w-1/3 pt-10 md:pt-0">
 			<h1 data-gsap-element="header" class="w-full sm:w-2/3">
 				{{ $hero['title'] }}
 			</h1>
@@ -25,7 +25,7 @@ $sectionClass .= $flip ? ' order-flip' : '';
 		@endif
 
 		@if (!empty($hero['image']))
-		<div data-gsap-element="img" class="__img order1">
+		<div data-gsap-element="img" class="__img relative md:absolute order1">
 			<img class="" src="{{ $hero['image']['url'] }}" alt="{{ $hero['image']['alt'] ?? '' }}">
 		</div>
 		@endif

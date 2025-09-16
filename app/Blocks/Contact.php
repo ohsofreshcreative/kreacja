@@ -43,6 +43,11 @@ class Contact extends Block
 			->addTab('Dane', ['placement' => 'top'])
 			->addGroup('g_contact_1', ['label' => ''])
 			->addText('title', ['label' => 'Tytuł'])
+			->addTextarea('text', [
+				'label' => 'Opis',
+				'rows' => 6,
+				'new_lines' => 'br',
+			])
 			->addText('phone', [
 				'label' => 'Numer telefonu',
 			])
@@ -51,11 +56,6 @@ class Contact extends Block
 			])
 			->addTextarea('adres', [
 				'label' => 'Adres',
-				'rows' => 6,
-				'new_lines' => 'br',
-			])
-			->addTextarea('data', [
-				'label' => 'Dane spółki',
 				'rows' => 6,
 				'new_lines' => 'br',
 			])

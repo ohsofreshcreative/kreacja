@@ -83,6 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
           nextEl: container.querySelector('.swiper-button-next'),
           prevEl: container.querySelector('.swiper-button-prev'),
         },
+        breakpoints: {
+          0: { slidesPerView: 1.1, spaceBetween: 20 },
+          768: { slidesPerView: 2.2, spaceBetween: 30 },
+          1024: { slidesPerView: 3.2, spaceBetween: 32 },
+        },
       });
     });
   }
@@ -179,6 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
         navigation: {
           nextEl: container.querySelector('.swiper-button-next'),
           prevEl: container.querySelector('.swiper-button-prev'),
+        },
+        breakpoints: {
+          0: { slidesPerView: 1.1, spaceBetween: 20 },
+          768: { slidesPerView: 2.2, spaceBetween: 30 },
         },
       });
     });

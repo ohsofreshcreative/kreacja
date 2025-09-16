@@ -183,7 +183,7 @@ use App\Walkers\MobileDropdownWalker;
 				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 			</svg>
 		</button>
-		<div x-ref="mSearch" class="hidden px-4 py-2 bg-white border-b md:hidden">
+		<div x-ref="mSearch" class="mSearch hidden px-4 py-2 bg-white border-b md:hidden">
 			<form method="get" action="{{ esc_url( home_url('/') ) }}" class="flex">
 				<input type="hidden" name="post_type" value="product">
 				<input name="s" type="search" placeholder="Szukaj produktów…" class="flex-1 border rounded-l-md px-3 py-2">
