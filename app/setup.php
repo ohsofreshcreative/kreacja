@@ -188,9 +188,9 @@ add_action('widgets_init', function () {
   register_sidebar([
     'name'          => __('Sidebar strony', 'sage'),
     'id'            => 'page-sidebar',
-    'before_widget' => '<section class="widget bg-white b-border rounded-2xl p-8 %1$s %2$s">',
+    'before_widget' => '<section class="widget relative bg-white b-border rounded-2xl p-8 %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h5 class="widget-title pb-4">',
+    'before_title'  => '<h5 class="widget-title flex">',
     'after_title'   => '</h5>',
   ]);
 });
