@@ -14,6 +14,11 @@
 
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 
+	<style>
+		:root {
+			--site-url: '{{ site(' url') }}';
+		}
+	</style>
 
 </head>
 
