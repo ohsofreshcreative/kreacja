@@ -30,7 +30,7 @@
   .accordion-label:hover {
   }
   .accordion-label::after {
-    content: url('http://raab.local/wp-content/uploads/2025/06/plus.svg');
+    content: url('/wp-content/uploads/2025/06/plus.svg');
     text-align: right;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -65,7 +65,7 @@
     border: 1px solid var(--primary);
   }
   input:checked + .accordion-label::after {
-    content: url('http://raab.local/wp-content/uploads/2025/06/minus.svg');
+    content: url('/wp-content/uploads/2025/06/minus.svg');
   }
   .accordion:has(input:checked) {
     padding-bottom: 24px;
